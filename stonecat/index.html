@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 
      <title>Stonecat</title>
@@ -56,10 +56,16 @@
           .active a{
                color: red!important;
           }
+          body.en :lang(sp) {
+            display: none!important;
+          }
+          body.sp :lang(en) {
+            display: none!important;
+          }
      </style>
 
 </head>
-<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50" class="sp">
 
      <!-- PRE LOADER -->
      <section class="preloader">
@@ -87,9 +93,15 @@
                     <div class="collapse navbar-collapse" style="background-color: white;">
                          <ul class="nav navbar-nav navbar-right">
                               <li><a href="#top" class="smoothScroll format">HOME</a></li>
-                              <li><a href="#Producto" class="smoothScroll format">PRODUCTO</a></li>
-                              <li><a href="#modouso" class="smoothScroll format">MODO DE USO</a></li>
-                              <li><a href="#contacto" class="smoothScroll format">CONTACTO</a></li>
+                              <li lang="sp"><a href="#Producto" class="smoothScroll format">PRODUCTO</a></li>
+                              <li lang="en"><a href="#Producto" class="smoothScroll format">PRODUCT</a></li>
+                              <li lang="sp"><a href="#modouso" class="smoothScroll format">MODO DE USO</a></li>
+                              <li lang="en"><a href="#modouso" class="smoothScroll format">HOW TO USE</a></li>
+                              <li lang="sp"><a href="#contacto" class="smoothScroll format">CONTACTO</a></li>
+                              <li lang="en"><a href="#contacto" class="smoothScroll format">CONTACT US</a></li>
+                              <button onclick="document.body.className='en'">English</button>
+                              <button onclick="document.body.className='sp'">Español</button>
+
                          </ul>
                     </div>
                </div>
@@ -117,13 +129,15 @@
 
      <div class="container-fluid text-center" style="background-color: #005f7f;color: white;">
           <div class="row" style="padding-left: 15vw;padding-right: 15vw;padding-bottom: 4vw;padding-top: 4vw;">
-               <h3>ARENA SANITARIA PARA GATOS AGLOMERANTE<br>(CLUMPING) </h3>
+               <h3 lang="sp">ARENA SANITARIA PARA GATOS AGLOMERANTE<br>(CLUMPING) </h3>
+               <h3 lang="en">AGLOMERANT SANITARY SAND FOR CATS<br>(CLUMPING) </h3>
                <hr style="width: 25%;height: 1px;background-color: darkgray;border: none;">
                <br>
-               <p style="color: white;padding-left: 8vw;padding-right: 8vw;">STONECAT es una marca de arena aglomerante de BENTONITA clasificada y patentada por ANDACOLLO S.A. Con una granulometría especialmente seleccionada para lograr maximizar el resultado del producto.Captura la humedad, generando compactos fáciles de retirar, absorbiendo líquidos y olores, sirve para uno o mas gatos. </p>
+               <p lang="sp" style="color: white;padding-left: 8vw;padding-right: 8vw;">STONECAT es una marca de arena aglomerante de BENTONITA clasificada y patentada por ANDACOLLO S.A. Con una granulometría especialmente seleccionada para lograr maximizar el resultado del producto.Captura la humedad, generando compactos fáciles de retirar, absorbiendo líquidos y olores, sirve para uno o mas gatos.</p>
+               <p lang="en" style="color: white;padding-left: 8vw;padding-right: 8vw;">STONECAT is a trademark of clumping sand of BENTONITE classified and patented by ANDACOLLO S.A. With a granulometry specially selected to maximize the the product result. It captures the dampness, generating compacts easy to remove, absorbing liquids and odors. It is effective with one or more cats.</p>
                <br>
                <br>
-               <a href="https://www.andacollosa.com.ar/" target=new()><button type="btn" class="btn btn-danger">Sitio web</button></a>
+               <a href="https://www.andacollosa.com.ar/" target=new()><button type="btn" class="btn btn-danger">Website</button></a>
           </div>
      </div>
 
@@ -131,22 +145,23 @@
      <div class="container-fluid text-center" style="background-color: white">
           <div class="row" style="width: 100%;margin: 0 auto;padding-bottom: 4vw;">
                <div class="col-xs-12 col-sm-12 col-md-12" style="padding-bottom: 4vw">
-                    <h3 style="font-size: 2em;color: darkblue;padding-bottom: 0;">PRODUCTO</h3>
+                    <h3 lang="sp" style="font-size: 2em;color: darkblue;padding-bottom: 0;">PRODUCTO</h3>
+                    <h3 lang="en" style="font-size: 2em;color: darkblue;padding-bottom: 0;">PRODUCT</h3>
                     <hr style="width: 25%;height: 2px;background-color: red;border: none;">
                     <br>
                </div>
                <div class="col-xs-4 col-sm-4 col-md-4">
 
                     <img src="images/bolsa3.jpg" id="6kg" style="width: auto;height: 20vw;" alt="bolsa de 6kg">
-                    <h4 id="texto6kg" style="font-weight: bold";>Pack de 6kg </h4>
+                    <h4 id="texto6kg" style="font-weight: bold";>6kg pack</h4>
                </div>
                <div class="col-xs-4 col-sm-4 col-md-4" id="4kg">
                     <img src="images/bolsa1.jpg" style="width: auto;height: 20vw;" alt="bolsa de 4kg">
-                  <h4 id="texto4kg" style="font-weight: bold;">Pack de 4kg</h4>
+                  <h4 id="texto4kg" style="font-weight: bold;">4kg pack</h4>
                </div>
                <div class="col-xs-4 col-sm-4 col-md-4">
                     <img src="images/bolsa2.jpg" id="2kg" style="width: auto;height: 20vw;" alt="bolsa de 2kg">               
-                    <h4 id="texto2kg" style="font-weight: bold;">Respuesto de 2kg </h4>
+                    <h4 id="texto2kg" style="font-weight: bold;">2kg repuesto</h4>
                </div>
           </div>
           <div class="row" style="height: 10vh;width: 100%;"></div>
@@ -157,31 +172,30 @@
           <div class="row" style="padding-left: 4em;padding-right: 4em;padding-bottom: 2em;">
                <div class="col-xs-12 col-sm-3 col-md-3" style="text-align: center;">
                     <img src="images/2.png" style="width: auto; height:15vh;display: inline-block;" alt="olores">
-                         <h4 style="color: white" width="80%">CAPTURA LOS OLORES</h4>
-                    <p style="color: white">
-                         Los olores (Heces + Orina) quedan atrapados en los cúmulos.
-                    </p>
+                         <h4 lang="sp" style="color: white" width="80%">CAPTURA LOS OLORES</h4>
+                         <h4 lang="en" style="color: white" width="80%">CAPTURE ODORS</h4>
+                    <p lang="sp" style="color: white">Los olores (Heces + Orina) quedan atrapados en los cúmulos.</p>
+                    <p lang="en" style="color: white">Odors (Feces + Urine) are trapped in the cumulus.</p>
                </div>
                <div class="col-xs-12 col-sm-3 col-md-3" style="text-align: center;">
                     <img src="images/1.png" style="width: auto; height:15vh;display: inline-block;" alt="retirar cumulos">
-                         <h4 style="color: white">MÁS ECOMOMICA</h4>
-                    <p style="color: white">
-                         No hay que retirar el 100 % del material una vez por semana, solo los cúmulos que se forman y reponer. Sirve para varios gatos.
-                    </p>
+                         <h4 lang="sp" style="color: white">MÁS ECOMOMICA</h4>
+                         <h4 lang="en" style="color: white">MORE ECOMOMIC</h4>
+                    <p lang="sp" style="color: white">No hay que retirar el 100 % del material una vez por semana, solo los cúmulos que se forman y reponer. Sirve para varios gatos.</p>
+                    <p lang="en" style="color: white">You don’t have to remove 100% of the material once a week, only the cumulus that were formed and replaced the material. It is effective with one or more cats.</p>
                </div>
                <div class="col-xs-12 col-sm-3 col-md-3" style="text-align: center;">
                     <img src="images/4.png" style="width: auto; height:15vh;display: inline-block;" alt="retirar material">
-                         <h4 style="color: white">FACIL DE LIMPIAR</h4>
-                    <p style="color: white">
-                         Sólo hay que retirar los cúmulos que se forman.
-                    </p>
+                         <h4 lang="sp" style="color: white">FACIL DE LIMPIAR</h4>
+                         <h4 lang="en" style="color: white">EASY TO CLEAN</h4>
+                    <p lang="sp" style="color: white">Sólo hay que retirar los cúmulos que se forman.</p>
+                    <p lang="en" style="color: white">You just have to remove the cumulus that are formed.</p>
                </div>
                <div class="col-xs-12 col-sm-3 col-md-3" style="text-align: center;">
                     <img src="images/3.png" style="width: auto; height:15vh;display: inline-block;" alt="no es tóxico">
                          <h4 style="color: white">100% NATURAL</h4>
-                    <p style="color: white">
-                         Al no tener químicos no es tóxico.
-                    </p>
+                    <p lang="sp" style="color: white">Al no tener químicos no es tóxico.</p>
+                    <p lang="en" style="color: white">It has no chemicals hence is not toxic.</p>
                </div>
           </div>
      </div>
@@ -195,7 +209,8 @@
 <section id="modouso" style="padding-top: 4vw;">
      <div class="container-fluid text-center">
           <div class="row" style="padding-bottom: 2em;">
-               <h3 style="font-size: 2em;color: darkblue;padding-bottom: 0;">MODO DE USO</h3>
+               <h3 lang="sp" style="font-size: 2em;color: darkblue;padding-bottom: 0;">MODO DE USO</h3>
+               <h3 lang="en" style="font-size: 2em;color: darkblue;padding-bottom: 0;">HOW TO USE</h3>
                
                <!-- barra roja -->
                <hr style="padding-top: 0;width: 15%;height: 2px;background-color: red;border: none;">
@@ -203,19 +218,22 @@
                <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="hideShow">
                          <img src="images/MDU (2).png" style="width: 40%;" alt="modo de uso 1">
-                         <p style="color:darkblue; width: 80%; margin: 0 auto;">Vierta Stonecat sobre la cama sanitaria. El producto debe formar como mínimo un colchón de 6 cm.</p>
+                         <p lang="sp" style="color:darkblue; width: 80%; margin: 0 auto;">Vierta Stonecat sobre la cama sanitaria. El producto debe formar como mínimo un colchón de 6 cm.</p>
+                         <p lang="en" style="color:darkblue; width: 80%; margin: 0 auto;">Pour Stonecat over the sanitary bed. The product must form at least a 6 cm mattress.</p>
                     </div>
                </div>
                <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="hideShow">
                          <img src="images/MDU (3).png" style="width: 40%;" alt="modo de uso 2">
-                         <p style="color:darkblue; width: 80%; margin: 0 auto;">Una vez que el gato utilizó la cama sanitaria, retire los cúmulos que se forman, recomendamos que sea en forma diaria. La cama sanitaria se considera sucia cuando tiene 3 o más cúmulos formados.</p>
+                         <p lang="sp" style="color:darkblue; width: 80%; margin: 0 auto;">Una vez que el gato utilizó la cama sanitaria, retire los cúmulos que se forman, recomendamos que sea en forma diaria. La cama sanitaria se considera sucia cuando tiene 3 o más cúmulos formados.</p>
+                         <p lang="en" style="color:darkblue; width: 80%; margin: 0 auto;">Once the cat used the sanitary bed, remove the cumulus that are formed, we recommend it on a daily basis. The sanitary bed is considered dirty when it has 3 or more cumulus formed.</p>
                     </div>
                </div>
                <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="hideShow">
                          <img src="images/MDU (1).png" style="width: 40%;" alt="modo de uso 3">
-                         <p style="color:darkblue; width: 80%; margin: 0 auto;">Reponga el producto con nuestro Repuesto Stonecat reemplazando el material que retiró. La cama sanitaria debe quedar nuevamente con un colchón mínimo de 6 cm.</p>
+                         <p lang="sp" style="color:darkblue; width: 80%; margin: 0 auto;">Reponga el producto con nuestro Repuesto Stonecat reemplazando el material que retiró. La cama sanitaria debe quedar nuevamente con un colchón mínimo de 6 cm.</p>
+                         <p lang="en" style="color:darkblue; width: 80%; margin: 0 auto;">Replace the product with our Stonecat Replacement that replaces the material you removed. The sanitary bed should be again with a minimum mattress of 6 cm.</p>
                     </div>
                </div>
           </div>
@@ -226,12 +244,17 @@
 </div>
 </section>
           <div class="row">
-               <iframe width="100%" height="498" src="https://www.youtube.com/embed/HsKu-zPvSZ4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!--                <iframe width="100%" height="498" src="https://www.youtube.com/embed/HsKu-zPvSZ4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<video width= "100%" height= "498px"controls>
+     <source src="video.mp4" type="video/mp4">
+     Your browser does not support HTML5 video.
+</video>
           </div>
 
      <section id="contacto" data-stellar-background-ratio="3" style="background-color: #f5d87c;padding-top: 4vw;padding-bottom: 5vh;">
 <div class="row text-center" style="width: 100%;margin: 0;">
-          <h3 style="line-height: 2vw;font-size: 1.75em;margin-top: 0.75em;margin-bottom: 0.75em;color:white">CONTACTO</h3>
+          <h3 lang="sp" style="line-height: 2vw;font-size: 1.75em;margin-top: 0.75em;margin-bottom: 0.75em;color:white">CONTACTO</h3>
+          <h3 lang="en" style="line-height: 2vw;font-size: 1.75em;margin-top: 0.75em;margin-bottom: 0.75em;color:white">CONTACT</h3>
      </div>
           <div class="container" style="padding-right: 1vw;padding-left: 1vw;">
                <div class="row">
@@ -245,15 +268,18 @@
                                         <input type="email"  class="form-control" id="email" name="email" placeholder="Tu Email" required>
                                    </div>
                                    <div class="col-md-12 col-sm-12">
-                                        <label for="email">Nombre</label>
+                                        <label lang="sp" for="email">Nombre</label>
+                                        <label lang="en" for="email">Name</label>
                                         <input type="text"  class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
                                    </div>
                                    <div class="col-md-12 col-sm-12">
-                                        <label for="email">Apellido</label>
+                                        <label lang="sp" for="email">Apellido</label>
+                                        <label lang="en" for="email">Surname</label>
                                         <input type="email"  class="form-control" id="apellido" name="apellido" placeholder="Tu apellido" required>
                                    </div>
                                    <div class="col-md-12 col-sm-12" style="padding-top: 1vw;">
-                                        <label for="Message">Mensaje</label>
+                                        <label lang="sp" for="Message">Mensaje</label>
+                                        <label lang="en" for="Message">Message</label>
                                         <textarea class="form-control" rows="5" id="message"  name="message" placeholder="Mensaje" required></textarea>
                                         <button type="button" class="form-control btn-primary" style="background-color: #005f7f"  id="cf-submit" name="submit">Enviar</button>
                                    </div>
@@ -262,11 +288,23 @@
                     </div>
 
                     <div class="col-md-6 col-sm-6" style="padding-top:3vw">
-                      
-                         <h3 class="wow fadeInUp" data-wow-delay="0.4s">Teléfono</h3>
-                         <p><i class="fa fa-phone"></i>+54 11 2071-2571</p>
-                         <h3 class="wow fadeInUp" data-wow-delay="0.4s">Email</h3>
-                         <p><i class="fa fa-envelope-o"></i> <a href="#">info@stonecat.com.ar</a></p>
+                         <div class="container-fluid">
+                              <div class="col-md-6 col-sm-6">
+                                   <h4 lang="sp" class="wow fadeInUp" data-wow-delay="0.4s">Redes sociales</h4>
+                                   <h4 lang="en" class="wow fadeInUp" data-wow-delay="0.4s">Social networks</h4>
+                                   <a style="font-size: 2em;" href="https://www.facebook.com/Stonecat-Oficial-110100226006501/" class="fa fa-facebook-square"><span style="font-size: 0.75em;"> | Facebook</span></a><br>
+                                   <a style="font-size: 2em;" href="https://twitter.com/stonecatoficial/" class="fa fa-twitter"><span style="font-size: 0.75em;"> | Twitter</span></a><br>
+                                   <a style="font-size: 2em;" href="https://www.instagram.com/stonecatoficial/" class="fa fa-instagram"><span style="font-size: 0.75em;"> | Instagram</span></a><br>
+                                   <a style="font-size: 2em;" href="https://www.youtube.com/channel/UCaM6aYW-baOUMHB0s_uf33A" class="fa fa-youtube"><span style="font-size: 0.75em;"> | YouTube</span></a><br>
+                              </div>
+                              <div class="col-md-6 col-sm-6">
+                                   <h3 lang="sp" class="wow fadeInUp" data-wow-delay="0.4s">Teléfono</h3>
+                                   <h3 lang="en" class="wow fadeInUp" data-wow-delay="0.4s">Phone</h3>
+                                   <p><i class="fa fa-phone"></i>+54 11 2071-2571</p>
+                                   <h3 class="wow fadeInUp" data-wow-delay="0.4s">Email</h3>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@stonecat.com.ar</a></p>
+                              </div>
+                         </div>
                     </div>
 
 
@@ -278,53 +316,11 @@
 <div class="container-fluid" style="height: 1vw;background-color: #005f7f"></div>
 
      <!-- FOOTER -->
-     <footer data-stellar-background-ratio="5" style="background-color: #343537">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-4 col-sm-4">
-                         <h4 class="wow fadeInUp" data-wow-delay="0.4s">Redes sociales</h4>
-                         <a style="font-size: 2em;" href="https://www.facebook.com/Stonecat-Oficial-110100226006501/" class="fa fa-facebook-square"><span style="font-size: 0.75em;"> | Facebook</span></a><br>
-                         <a style="font-size: 2em;" href="https://twitter.com/stonecatoficial/" class="fa fa-twitter"><span style="font-size: 0.75em;"> | Twitter</span></a><br>
-                         <a style="font-size: 2em;" href="https://www.instagram.com/stonecatoficial/" class="fa fa-instagram"><span style="font-size: 0.75em;"> | Instagram</span></a><br>
-                         <a style="font-size: 2em;" href="https://www.youtube.com/channel/UCaM6aYW-baOUMHB0s_uf33A" class="fa fa-youtube"><span style="font-size: 0.75em;"> | YouTube</span></a><br>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4" style="text-align: center;">
-                         <img style="width: auto; height: 25vh; display: inline-block;" src="images/stonecat.png" alt="logo stonecat">
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                         <div class="footer-thumb">
-                              <div class="contact-info">
-                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Teléfono</h4>
-                                   <p><i class="fa fa-phone"></i>+54 11 2071-2571</p>
-                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Email</h4>
-                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@stonecat.com.ar</a></p>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12 border-top">
-                         <div class="col-md-4 col-sm-6">
-                              <div class="copyright-text"> 
-                                   <p>Copyright &copy; 2018 StoneCat 
-                                   
-                                   | Design: <a href="http://www.solwin.com.ar" target="_blank">SolWin</a></p>
-                              </div>
-                         </div>
-                         <div class="col-md-6 col-sm-6">
-                              <div class="footer-link"> 
-                              </div>
-                         </div>
-                         <div class="col-md-2 col-sm-2 text-align-center">
-                              <div class="angle-up-btn"> 
-                                  <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
-                              </div>
-                         </div>   
-                    </div>
-                    
-               </div>
+     <footer style="background-color: #343537; padding: 0!important">
+          <div class="copyright-text"> 
+               <p style="margin: 0">Copyright &copy; 2018 StoneCat 
+               
+               | Design: <a href="http://www.solwin.com.ar" target="_blank">SolWin</a></p>
           </div>
      </footer>
 
@@ -339,6 +335,12 @@
      <script src="js/custom.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.11/sweetalert2.all.js"></script>
      <script src="js/index.js"></script>
+
+     <script>
+          $("#en").click(function(){
+            document.body.className = 'en';
+          };
+     </script>
 
 </body>
 </html>
