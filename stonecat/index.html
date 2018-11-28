@@ -16,6 +16,9 @@
      <link rel="stylesheet" href="css/owl.carousel.css">
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+
+
      <link rel="apple-touch-icon" sizes="57x57" href="images/favi/apple-icon-57x57.png">
      <link rel="apple-touch-icon" sizes="60x60" href="images/favi/apple-icon-60x60.png">
      <link rel="apple-touch-icon" sizes="72x72" href="images/favi/apple-icon-72x72.png">
@@ -56,11 +59,10 @@
           .active a{
                color: red!important;
           }
-          body.en :lang(sp) {
-            display: none!important;
-          }
-          body.sp :lang(en) {
-            display: none!important;
+          body:not(.en) :lang(en), 
+          body:not(.sp) :lang(sp), 
+          body:not(.pt) :lang(pt) { 
+              display: none!important;
           }
      </style>
 
@@ -95,12 +97,19 @@
                               <li><a href="#top" class="smoothScroll format">HOME</a></li>
                               <li lang="sp"><a href="#Producto" class="smoothScroll format">PRODUCTO</a></li>
                               <li lang="en"><a href="#Producto" class="smoothScroll format">PRODUCT</a></li>
+                              <li lang="pt"><a href="#Producto" class="smoothScroll format">PRODUTO</a></li>
+
                               <li lang="sp"><a href="#modouso" class="smoothScroll format">MODO DE USO</a></li>
                               <li lang="en"><a href="#modouso" class="smoothScroll format">HOW TO USE</a></li>
+                              <li lang="pt"><a href="#modouso" class="smoothScroll format">MODO DE USO</a></li>
+
                               <li lang="sp"><a href="#contacto" class="smoothScroll format">CONTACTO</a></li>
                               <li lang="en"><a href="#contacto" class="smoothScroll format">CONTACT US</a></li>
-                              <button onclick="document.body.className='en'">English</button>
-                              <button onclick="document.body.className='sp'">Español</button>
+                              <li lang="pt"><a href="#contacto" class="smoothScroll format">CONTATO</a></li>
+
+                              <button onclick="document.body.className='sp'" style="background-color: unset;border: unset;"><span class="flag-icon flag-icon-es"> </span></button>
+                              <button onclick="document.body.className='en'" style="background-color: unset;border: unset;"><span class="flag-icon flag-icon-us"> </span></button>
+                              <button onclick="document.body.className='pt'" style="background-color: unset;border: unset;"><span class="flag-icon flag-icon-pt"> </span></button>
 
                          </ul>
                     </div>
@@ -129,12 +138,16 @@
 
      <div class="container-fluid text-center" style="background-color: #005f7f;color: white;">
           <div class="row" style="padding-left: 15vw;padding-right: 15vw;padding-bottom: 4vw;padding-top: 4vw;">
-               <h3 lang="sp">ARENA SANITARIA PARA GATOS AGLOMERANTE<br>(CLUMPING) </h3>
-               <h3 lang="en">AGLOMERANT SANITARY SAND FOR CATS<br>(CLUMPING) </h3>
+               <h3 lang="sp">ARENA SANITARIA AGLOMERANTE (CLUMPING) PARA GATOS<br> </h3>
+               <h3 lang="en">SANITARY SAND (CLUMPING) FOR CATS<br> </h3>
+               <h3 lang="pt">AREIA SANITÁRIA AGLOMERANTE (CLUMPING) PARA GATOS<br> </h3>
+
                <hr style="width: 25%;height: 1px;background-color: darkgray;border: none;">
                <br>
                <p lang="sp" style="color: white;padding-left: 8vw;padding-right: 8vw;">STONECAT es una marca de arena aglomerante de BENTONITA clasificada y patentada por ANDACOLLO S.A. Con una granulometría especialmente seleccionada para lograr maximizar el resultado del producto.Captura la humedad, generando compactos fáciles de retirar, absorbiendo líquidos y olores, sirve para uno o mas gatos.</p>
                <p lang="en" style="color: white;padding-left: 8vw;padding-right: 8vw;">STONECAT is a trademark of clumping sand of BENTONITE classified and patented by ANDACOLLO S.A. With a granulometry specially selected to maximize the the product result. It captures the dampness, generating compacts easy to remove, absorbing liquids and odors. It is effective with one or more cats.</p>
+               <p lang="pt" style="color: white;padding-left: 8vw;padding-right: 8vw;">STONECAT é uma marca de areia ligante da BENTONITA classificada e patenteada pela ANDACOLLO S.A. Com uma granulometria especialmente selecionada para maximizar o resultado do produto.Capturar umidade, gerando compactos fáceis de remover, absorvendo líquidos e odores, atende um ou mais gatos.</p>
+
                <br>
                <br>
                <a href="https://www.andacollosa.com.ar/" target=new()><button type="btn" class="btn btn-danger">Website</button></a>
@@ -147,6 +160,8 @@
                <div class="col-xs-12 col-sm-12 col-md-12" style="padding-bottom: 4vw">
                     <h3 lang="sp" style="font-size: 2em;color: darkblue;padding-bottom: 0;">PRODUCTO</h3>
                     <h3 lang="en" style="font-size: 2em;color: darkblue;padding-bottom: 0;">PRODUCT</h3>
+                    <h3 lang="pt" style="font-size: 2em;color: darkblue;padding-bottom: 0;">PRODUTO</h3>
+
                     <hr style="width: 25%;height: 2px;background-color: red;border: none;">
                     <br>
                </div>
@@ -174,28 +189,42 @@
                     <img src="images/2.png" style="width: auto; height:15vh;display: inline-block;" alt="olores">
                          <h4 lang="sp" style="color: white" width="80%">CAPTURA LOS OLORES</h4>
                          <h4 lang="en" style="color: white" width="80%">CAPTURE ODORS</h4>
+                         <h4 lang="pt" style="color: white" width="80%">CAPTURE CHEIROS</h4>
+
                     <p lang="sp" style="color: white">Los olores (Heces + Orina) quedan atrapados en los cúmulos.</p>
                     <p lang="en" style="color: white">Odors (Feces + Urine) are trapped in the cumulus.</p>
+                    <p lang="pt" style="color: white">Odores (fezes + urina) estão presos nos clusters.</p>
+
                </div>
                <div class="col-xs-12 col-sm-3 col-md-3" style="text-align: center;">
                     <img src="images/1.png" style="width: auto; height:15vh;display: inline-block;" alt="retirar cumulos">
                          <h4 lang="sp" style="color: white">MÁS ECOMOMICA</h4>
                          <h4 lang="en" style="color: white">MORE ECOMOMIC</h4>
+                         <h4 lang="pt" style="color: white">MAIS ECOMÔMICO</h4>
+
                     <p lang="sp" style="color: white">No hay que retirar el 100 % del material una vez por semana, solo los cúmulos que se forman y reponer. Sirve para varios gatos.</p>
                     <p lang="en" style="color: white">You don’t have to remove 100% of the material once a week, only the cumulus that were formed and replaced the material. It is effective with one or more cats.</p>
+                    <p lang="pt" style="color: white">Não é necessário remover 100% do material uma vez por semana, apenas as acumulações que são formadas e substituídas. Serve para vários gatos.</p>
+
                </div>
                <div class="col-xs-12 col-sm-3 col-md-3" style="text-align: center;">
                     <img src="images/4.png" style="width: auto; height:15vh;display: inline-block;" alt="retirar material">
-                         <h4 lang="sp" style="color: white">FACIL DE LIMPIAR</h4>
+                         <h4 lang="sp" style="color: white">FÁCIL DE LIMPIAR</h4>
                          <h4 lang="en" style="color: white">EASY TO CLEAN</h4>
+                         <h4 lang="pt" style="color: white">FÁCIL DE LIMPAR</h4>
+
                     <p lang="sp" style="color: white">Sólo hay que retirar los cúmulos que se forman.</p>
                     <p lang="en" style="color: white">You just have to remove the cumulus that are formed.</p>
+                    <p lang="pt" style="color: white">Você só precisa remover os clusters que são formados.</p>
+
                </div>
                <div class="col-xs-12 col-sm-3 col-md-3" style="text-align: center;">
                     <img src="images/3.png" style="width: auto; height:15vh;display: inline-block;" alt="no es tóxico">
                          <h4 style="color: white">100% NATURAL</h4>
                     <p lang="sp" style="color: white">Al no tener químicos no es tóxico.</p>
                     <p lang="en" style="color: white">It has no chemicals hence is not toxic.</p>
+                    <p lang="pt" style="color: white">Não ter produtos químicos não é tóxico.</p>
+
                </div>
           </div>
      </div>
@@ -211,6 +240,7 @@
           <div class="row" style="padding-bottom: 2em;">
                <h3 lang="sp" style="font-size: 2em;color: darkblue;padding-bottom: 0;">MODO DE USO</h3>
                <h3 lang="en" style="font-size: 2em;color: darkblue;padding-bottom: 0;">HOW TO USE</h3>
+               <h3 lang="pt" style="font-size: 2em;color: darkblue;padding-bottom: 0;">MODO DE USO</h3>
                
                <!-- barra roja -->
                <hr style="padding-top: 0;width: 15%;height: 2px;background-color: red;border: none;">
@@ -220,6 +250,8 @@
                          <img src="images/MDU (2).png" style="width: 40%;" alt="modo de uso 1">
                          <p lang="sp" style="color:darkblue; width: 80%; margin: 0 auto;">Vierta Stonecat sobre la cama sanitaria. El producto debe formar como mínimo un colchón de 6 cm.</p>
                          <p lang="en" style="color:darkblue; width: 80%; margin: 0 auto;">Pour Stonecat over the sanitary bed. The product must form at least a 6 cm mattress.</p>
+                         <p lang="pt" style="color:darkblue; width: 80%; margin: 0 auto;">Despeje a Stonecat sobre o leito sanitário. O produto deve formar pelo menos um colchão de 6 cm.</p>
+
                     </div>
                </div>
                <div class="col-xs-12 col-sm-4 col-md-4">
@@ -227,6 +259,8 @@
                          <img src="images/MDU (3).png" style="width: 40%;" alt="modo de uso 2">
                          <p lang="sp" style="color:darkblue; width: 80%; margin: 0 auto;">Una vez que el gato utilizó la cama sanitaria, retire los cúmulos que se forman, recomendamos que sea en forma diaria. La cama sanitaria se considera sucia cuando tiene 3 o más cúmulos formados.</p>
                          <p lang="en" style="color:darkblue; width: 80%; margin: 0 auto;">Once the cat used the sanitary bed, remove the cumulus that are formed, we recommend it on a daily basis. The sanitary bed is considered dirty when it has 3 or more cumulus formed.</p>
+                         <p lang="pt" style="color:darkblue; width: 80%; margin: 0 auto;">Uma vez que o gato usou o leito sanitário, remova as acumulações que são formadas, recomendamos diariamente. O leito sanitário é considerado sujo quando tem 3 ou mais acumulações formadas.</p>
+
                     </div>
                </div>
                <div class="col-xs-12 col-sm-4 col-md-4">
@@ -234,6 +268,8 @@
                          <img src="images/MDU (1).png" style="width: 40%;" alt="modo de uso 3">
                          <p lang="sp" style="color:darkblue; width: 80%; margin: 0 auto;">Reponga el producto con nuestro Repuesto Stonecat reemplazando el material que retiró. La cama sanitaria debe quedar nuevamente con un colchón mínimo de 6 cm.</p>
                          <p lang="en" style="color:darkblue; width: 80%; margin: 0 auto;">Replace the product with our Stonecat Replacement that replaces the material you removed. The sanitary bed should be again with a minimum mattress of 6 cm.</p>
+                         <p lang="pt" style="color:darkblue; width: 80%; margin: 0 auto;">Substitua o produto pelo nosso substituto Stonecat substituindo o material removido. A cama sanitária deve ser novamente com um colchão mínimo de 6 cm.</p>
+
                     </div>
                </div>
           </div>
@@ -255,6 +291,8 @@
 <div class="row text-center" style="width: 100%;margin: 0;">
           <h3 lang="sp" style="line-height: 2vw;font-size: 1.75em;margin-top: 0.75em;margin-bottom: 0.75em;color:white">CONTACTO</h3>
           <h3 lang="en" style="line-height: 2vw;font-size: 1.75em;margin-top: 0.75em;margin-bottom: 0.75em;color:white">CONTACT</h3>
+          <h3 lang="pt" style="line-height: 2vw;font-size: 1.75em;margin-top: 0.75em;margin-bottom: 0.75em;color:white">CONTATO</h3>
+
      </div>
           <div class="container" style="padding-right: 1vw;padding-left: 1vw;">
                <div class="row">
@@ -270,16 +308,19 @@
                                    <div class="col-md-12 col-sm-12">
                                         <label lang="sp" for="email">Nombre</label>
                                         <label lang="en" for="email">Name</label>
-                                        <input type="text"  class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                                        <label lang="pt" for="email">Nome</label>
+                                        <input type="text"  class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
                                    </div>
                                    <div class="col-md-12 col-sm-12">
                                         <label lang="sp" for="email">Apellido</label>
                                         <label lang="en" for="email">Surname</label>
-                                        <input type="email"  class="form-control" id="apellido" name="apellido" placeholder="Tu apellido" required>
+                                        <label lang="pt" for="email">Sobrenome</label>
+                                        <input type="email"  class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
                                    </div>
                                    <div class="col-md-12 col-sm-12" style="padding-top: 1vw;">
                                         <label lang="sp" for="Message">Mensaje</label>
                                         <label lang="en" for="Message">Message</label>
+                                        <label lang="pt" for="Message">Mensagem</label>
                                         <textarea class="form-control" rows="5" id="message"  name="message" placeholder="Mensaje" required></textarea>
                                         <button type="button" class="form-control btn-primary" style="background-color: #005f7f"  id="cf-submit" name="submit">Enviar</button>
                                    </div>
@@ -292,6 +333,8 @@
                               <div class="col-md-6 col-sm-6">
                                    <h4 lang="sp" class="wow fadeInUp" data-wow-delay="0.4s">Redes sociales</h4>
                                    <h4 lang="en" class="wow fadeInUp" data-wow-delay="0.4s">Social networks</h4>
+                                   <h4 lang="pt" class="wow fadeInUp" data-wow-delay="0.4s">Redes sociais</h4>
+
                                    <a style="font-size: 2em;" href="https://www.facebook.com/Stonecat-Oficial-110100226006501/" class="fa fa-facebook-square"><span style="font-size: 0.75em;"> | Facebook</span></a><br>
                                    <a style="font-size: 2em;" href="https://twitter.com/stonecatoficial/" class="fa fa-twitter"><span style="font-size: 0.75em;"> | Twitter</span></a><br>
                                    <a style="font-size: 2em;" href="https://www.instagram.com/stonecatoficial/" class="fa fa-instagram"><span style="font-size: 0.75em;"> | Instagram</span></a><br>
@@ -300,6 +343,8 @@
                               <div class="col-md-6 col-sm-6">
                                    <h3 lang="sp" class="wow fadeInUp" data-wow-delay="0.4s">Teléfono</h3>
                                    <h3 lang="en" class="wow fadeInUp" data-wow-delay="0.4s">Phone</h3>
+                                   <h3 lang="pt" class="wow fadeInUp" data-wow-delay="0.4s">Telefone</h3>
+
                                    <p><i class="fa fa-phone"></i>+54 11 2071-2571</p>
                                    <h3 class="wow fadeInUp" data-wow-delay="0.4s">Email</h3>
                                    <p><i class="fa fa-envelope-o"></i> <a href="#">info@stonecat.com.ar</a></p>
